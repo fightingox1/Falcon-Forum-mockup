@@ -33,17 +33,18 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">placeholder</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">placeholder</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">placeholder</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- header images thing -->
+  <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center" style="display: block;">
-    <img src="http://fightingox1.github.io/Falcon-Forum-mockup/head-pic.jpg" style="width:100%">
+    <img src="https://fightingox1.github.io/Falcon-Forum-mockup/Tyler-Spruill/why-you-should-build-your-own-pc/head-pic.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Building PCs.</h3>
       <p><b>Why should you build your own PC?</b></p>   
@@ -52,7 +53,7 @@ body {font-family: "Lato", sans-serif}
   
   
 
-
+  <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">Why you should build your own PC.</h2>
     <p class="w3-opacity"><i>By Tyler Spruill September 29th, 2020</i></p>
@@ -65,17 +66,45 @@ body {font-family: "Lato", sans-serif}
       </div>
       <div class="w3-third">
         <center><h3>Related articles</h3></center><b><b>
-<center><img src="https://fightingox1.github.io/Falcon-Forum-mockup/download.jpg" class="w3-round w3-margin-bottom" style="width:60%"></center>
+<center><img src="https://fightingox1.github.io/Falcon-Forum-mockup/Tyler-Spruill/why-you-should-build-your-own-pc/download.jpg" class="w3-round w3-margin-bottom" style="width:60%"></center>
 <center><a href="https://techguided.com/14-reasons-why-you-should-build-a-pc/" class="fingerCursor">Tech guide</a></center>
 </b></b></div>
       
     </div>
   </div>
 
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    
+  </div>
 
-
-
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
       </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -123,6 +152,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 
 
 
